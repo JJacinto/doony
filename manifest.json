@@ -9,11 +9,18 @@
     {
       "__comment__": "You need to add your own URL's here.",
       "matches": [
-        "https://jenkins.ci.cloudbees.com/*",
-        "http://localhost:8080/*"
+        "https://jenkins.ubiprism.pt/*",
+        "https://pt.wikipedia.org/*"
       ],
-      "css": ["doony.min.css"],
-      "js": ["src/vendor/jquery-2.0.3.js", "doony.js"]
+      "css": ["doony.min.css",
+        "./node_modules/font-awesome/css/font-awesome.min.css"
+      ],
+      "js": ["src/vendor/jquery-2.0.3.js", "doony.min.js"],
+      "web_accessible_resources": [
+        "./node_modules/font-awesome/fonts/*",
+        "node_modules/font-awesome/fonts/fontawesome-webfont.ttf",
+        "chrome-extension://aeiefcckdekdcdkfmjhcdmcocmglfpdi/node_modules/font-awesome/fonts/fontawesome-webfont.ttf"
+      ]
     }
    ]
 }
